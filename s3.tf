@@ -30,5 +30,6 @@ resource "aws_s3_bucket" "manual" {
   tags = {
     "Importado" = "25/04/2022"
     "ManagedBy" = "Terraform"
+    "Author" = "James"
   }
 }
