@@ -26,6 +26,8 @@ resource "aws_s3_bucket" "remote-state" {
     enabled = true
   }
 
+  force_destroy = true
+
   tags = {
     "Description" = "Stores terraform remote state files"
     "ManagedBy"   = "Terraform"
